@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Constraints" load_steps=2 format=3 uid="uid://bsfs8yby5xb82"]
+
+[ext_resource type="Script" uid="uid://c21lbk5hfw35n" path="res://Scripts/Constraints.gd" id="1_rv4ba"]
+
+[resource]
+script = ExtResource("1_rv4ba")
+idName = "G"
+globalConstraints = []
+frontConstraints = Array[int]([0, 1, 2, 3, 7, 8, 9])
+backConstraints = Array[int]([0, 1, 2, 3, 7, 8, 9])
+leftConstraints = Array[int]([0, 1, 2, 3, 7, 8, 9])
+rightConstraints = Array[int]([0, 1, 2, 3, 7, 8, 9])
+topConstraints = Array[int]([])
+bottomConstraints = Array[int]([])

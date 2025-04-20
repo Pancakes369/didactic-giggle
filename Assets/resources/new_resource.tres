@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Constraints" load_steps=2 format=3 uid="uid://b78qgp33yvyl6"]
+
+[ext_resource type="Script" uid="uid://c21lbk5hfw35n" path="res://Scripts/Constraints.gd" id="1_wecr1"]
+
+[resource]
+script = ExtResource("1_wecr1")
+globalConstraints = []
+frontConstraints = []
+backConstraints = []
+leftConstraints = []
+rightConstraints = []
+topConstraints = []
+bottomConstraints = []
+metadata/_custom_type_script = "uid://c21lbk5hfw35n"

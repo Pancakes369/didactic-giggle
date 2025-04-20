@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bkuibu7fqxpgg"]
 
 [ext_resource type="Script" uid="uid://clbd32b80seer" path="res://Scripts/generateConstraints.gd" id="1_bo1nx"]
-[ext_resource type="MeshLibrary" uid="uid://crh22g8e1mhp5" path="res://Assets/IslandTileset.tres" id="1_jjgbg"]
+[ext_resource type="MeshLibrary" uid="uid://dlbnvc33xoawo" path="res://Assets/IslandTileset.tres" id="1_jjgbg"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bo1nx"]
 
