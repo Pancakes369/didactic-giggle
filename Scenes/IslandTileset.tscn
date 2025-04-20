@@ -1,0 +1,779 @@
+[gd_scene load_steps=54 format=4 uid="uid://blvewqfen66s3"]
+
+[ext_resource type="Texture2D" uid="uid://clgpdg1tjxekw" path="res://Assets/IslandTilemap_IslandTileset.png" id="1_cs2fn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eqsl6"]
+resource_name = "Island.001"
+cull_mode = 2
+albedo_texture = ExtResource("1_cs2fn")
+roughness = 0.5
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rj7sg"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAAAAQABgAHAAAABwADAAAABwAIAAMA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("/38AAP9/AAD//wAAAAAAAP//AAD/fwAA/38AAAAAAAD/fwAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA/38AAAAAAAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_n8l7m"]
+resource_name = "IslandTilemap_Plane"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"attribute_data": PackedByteArray("/w//DwAA/x8AAP8P/w//H/8PAAAAAAAA/x8AAP8f/w//H/8f"),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAAAAQABgAHAAAABwADAAAABwAIAAMA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("/38AAP9//////wAAAAD/////AAD/f////38AAAAA////fwAA////////AAD/////AAAAAP////8AAAAA/3///wAAAAAAAP///3//v/9//7//f/+//3//v/9//7//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_rj7sg")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ytwh6"]
+data = PackedVector3Array(0, 0, 0, 0.5, 0, -0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, -0.5, 0.5, 0, -0.5, 0, 0, 0.5, 0.5, 0, 0, 0.5, 0, 0.5, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -0.5, 0, 0.5, 0, 0, 0, 0, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0, 0, 0, 0, -0.5, 0, 0, 0, 0, -0.5, 0, 0, 0, -0.5, 0, 0, -0.5, 0, -0.5, 0, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_t5qul"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 0.5, 0.5, 1),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAAAAQABgAHAAAABwADAAAABwAIAAMA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("//////9/AAD//wAAAAAAAP//AAD/fwAA/////wAAAAD///////8AAP//AAD//wAAAAD/////AAAAAP///38AAAAA//8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_leyhw"]
+resource_name = "IslandTilemap_Plane_002"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 0.5, 0.5, 1),
+"attribute_data": PackedByteArray("/08AAP9f/w//T/8P/18AAP8/AAD/P/8P/x8AAP8P/w//DwAA/x//D/8P/x//H/8f"),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAHAAgABgAJAAcACQAKAAcACQALAAoA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("//////9//7///wAAAAD/v///AAD/f/+//////wAA/7//////////v///AAD///+/AAD//////////////3//////////////AAD///9/////////AAD//wAA//8AAP///38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/3//v/9//7//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_t5qul")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ebcsg"]
+data = PackedVector3Array(0, 0, 0, 0, -0.5, -0.5, 0, -0.5, 0, 0, 0, 0, 0, 0, -0.5, 0, -0.5, -0.5, 0, 0, 0.5, 0, -0.5, 0, 0, -0.5, 0.5, 0, 0, 0.5, 0, 0, 0, 0, -0.5, 0, -0.5, 0, 0.5, 0, 0, 0, 0, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0, 0, 0, 0, -0.5, 0, 0, 0, 0, -0.5, 0, 0, 0, -0.5, 0, 0, -0.5, 0, -0.5, 0, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6picx"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5),
+"format": 34896613377,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAACAAQAAAAFAAMAAAAEAAYAAAAGAAUA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 7,
+"vertex_data": PackedByteArray("////////AAD//wAAAAAAAP//AAD//wAA/////wAAAAAAAAAA//8AAAAA//8AAAAAAAD/////AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_eaf1o"]
+resource_name = "IslandTilemap_Plane_003"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5),
+"attribute_data": PackedByteArray("/08AAP9f/w//T/8P/18AAP8P/w//H/8f/w//H/8f/w//TwAA/z//D/8/AAD/T/8P"),
+"format": 34896613399,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("/////////7///wAAAAD/v///AAD///+//////wAA/7///////////wAA//8AAP///////wAA//8AAP///////////////wCAAAAAAP//AIAAAP////8AgP//AAD//wCA/38AAP9/AAD/fwAA/38AAP9//7//f/+//3//v/9//7//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_6picx")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_c2fic"]
+data = PackedVector3Array(0, 0, 0, 0, -0.5, -0.5, 0, -0.5, 0, 0, 0, 0, 0, 0, -0.5, 0, -0.5, -0.5, 0, 0, 0, -0.5, 0, -0.5, 0, 0, -0.5, 0, 0, 0, -0.5, -0.5, 0, -0.5, 0, 0, 0, 0, 0, 0, -0.5, 0, -0.5, -0.5, 0, 0, 0, 0, -0.5, 0, 0, -0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2klfg"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 0.5, 1),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABQAGAAMABwADAAYACAADAAcACAAJAAMACQABAAMACQAKAAEA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 11,
+"vertex_data": PackedByteArray("/3//////AAD/fwAA/38AAP9/AAD//wAA/3////9/AAAAAP////8AAAAA////fwAAAAD//wAAAAD/f///AAAAAP////8AAAAA//////9/AAD//wAA/38AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4sdyk"]
+resource_name = "IslandTilemap_Plane_004"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 0.5, 1),
+"attribute_data": PackedByteArray("/z8AAP9P/w//P/8P/08AAP8fAAD/D/8P/w8AAP8f/w//H/8f/w//H/8P/w8AAP8fAAD/D/9fAAD/T/8P/08AAP9f/w8="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUABwAIAAUACQAFAAgACgALAAkACgAMAAsADQAOAA8ADQAQAA4A"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("/3///////7//fwAA/3//v/9/AAD///+//3////9//78AAP////////9/////f////3////////8AAP///3///wAA//8AAP///3///wAA////////AACqKv9/////f6oq//////9/qir//////38AgP9/AAD/fwCA/3////9/AID//wAA/38AgP9/AAD/fwAA/38AAP9/AAD/f/+//3//v/9//7//f/+//3//v/9//79U1aoqVNWqKlTVqir/f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_2klfg")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7gxq7"]
+data = PackedVector3Array(0, 0, 0.5, 0, -0.5, 0, 0, -0.5, 0.5, 0, 0, 0.5, 0, 0, 0, 0, -0.5, 0, -0.5, 0, 0.5, 0, 0, 0, 0, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0, 0, 0, 0, -0.5, 0, 0, -0.5, 0, -0.5, 0, 0, 0, 0.5, 0, 0, 0, -0.5, 0, 0, 0, 0, 0.5, 0, 0, 0.5, -0.5, 0, 0, -0.5, 0, 0.5, 0, -0.5, 0, 0, 0, 0, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, -0.5, 0, 0, 0, -0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bjqdn"]
+_surfaces = [{
+"aabb": AABB(-3.7749e-08, -0.5, -0.5, 1e-05, 1, 1),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAAAAQABgAHAAAABwADAAAABwAIAAMA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("9wD/f/9/AADuAQAAAAAAAO4BAAD/fwAA9wD/fwAAAAD3AP9///8AAO4BAAD//wAAAAD/////AAAAAP///38AAAAA//8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hy8fg"]
+resource_name = "IslandTilemap_Plane_009"
+_surfaces = [{
+"aabb": AABB(-3.7749e-08, -0.5, -0.5, 1e-05, 1, 1),
+"attribute_data": PackedByteArray("/08AAP9f/w//T/8P/18AAP8/AAD/P/8P/z//D/9P/x//P/8f/0//D/9f/x//X/8P"),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAHAAgABgAJAAcACQAKAAcACQALAAoA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("9wD/f/9//7/uAQAAAAD/v+4BAAD/f/+/9wD/fwAA/7/3AP9/////v+4BAAD///+/AAD//////7/3AP9//3//v/cA/3////+/AAD///9//7/3AP9/AAD/vwAA//8AAP+//38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_bjqdn")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ou7on"]
+data = PackedVector3Array(0, 0, 0, 3.7749e-08, -0.5, -0.5, 3.7749e-08, -0.5, 0, 0, 0, 0, 0, 0, -0.5, 3.7749e-08, -0.5, -0.5, 0, 0, 0.5, 3.7749e-08, -0.5, 0, 3.7749e-08, -0.5, 0.5, 0, 0, 0.5, 0, 0, 0, 3.7749e-08, -0.5, 0, -3.7749e-08, 0.5, 0.5, 0, 0, 0, 0, 0, 0.5, -3.7749e-08, 0.5, 0.5, -3.7749e-08, 0.5, 0, 0, 0, 0, -3.7749e-08, 0.5, 0, 0, 0, -0.5, 0, 0, 0, -3.7749e-08, 0.5, 0, -3.7749e-08, 0.5, -0.5, 0, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tk21a"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 0.5, 1, 0.5),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAACAAMAAAAEAAEAAAADAAUABgAEAAAABgAAAAUABgAHAAQABgAFAAgA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("/v//f/7/AAD//wAAAAAAAP7/AAD+/wAAAAAAAP//AAD+//9/AAAAAAAA/3/+/wAA/v////7/AAD+////AAAAAAAA///+/wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4ii4e"]
+resource_name = "IslandTilemap_Plane_010"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 0.5, 1, 0.5),
+"attribute_data": PackedByteArray("/08AAP9f/w//T/8P/18AAP9P/w//X/8f/0//H/9f/w//PwAA/0//D/9PAAD/P/8P/0//D/8//x//P/8P/0//Hw=="),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("/v//f/7//7///wAAAAD/v/7/AAD+//+//v//fwAA/7/+/////v//v/7//38AAP+//v//f/7//7/+////AAD/v/7//3/+/wAAAAAAAP//AAAAAP9//v8AAP7/AAD+/wAA/v////7/AIAAAP9//v8AgAAA///+/wCA/v//f/7/AID/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9//3//f/9//3//f/9//3//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tk21a")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_pvh51"]
+data = PackedVector3Array(0, 0, 0, 3.7749e-08, -0.5, -0.5, 1.88745e-08, -0.5, 1.88745e-08, 0, 0, 0, 0, 0, -0.5, 3.7749e-08, -0.5, -0.5, -1.88745e-08, 0.5, -1.88745e-08, 0, 0, -0.5, 0, 0, 0, -1.88745e-08, 0.5, -1.88745e-08, -3.7749e-08, 0.5, -0.5, 0, 0, -0.5, 0, 0, 0, -0.5, -0.5, 3.7749e-08, -0.5, 0, 0, 0, 0, 0, 1.88745e-08, -0.5, 1.88745e-08, -0.5, -0.5, 3.7749e-08, -1.88745e-08, 0.5, -1.88745e-08, -0.5, 0, 0, -0.5, 0.5, -3.7749e-08, -1.88745e-08, 0.5, -1.88745e-08, 0, 0, 0, -0.5, 0, 0)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_muyhy"]
+_surfaces = [{
+"aabb": AABB(-3.7749e-08, -0.5, -3.7749e-08, 0.5, 1, 0.5),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABgADAAUABgAHAAMABwABAAMABwAIAAEA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("AAD/f///AAAAAAAAAAAAAAAAAAD//wAAAAD/fwAAAAAAAP////8AAAAA//8AAAAA/////wAAAAD///9/AAAAAP//AAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_100ev"]
+resource_name = "IslandTilemap_Plane_011"
+_surfaces = [{
+"aabb": AABB(-3.7749e-08, -0.5, -3.7749e-08, 0.5, 1, 0.5),
+"attribute_data": PackedByteArray("/z8AAP9P/w//P/8P/08AAP8//w//T/8f/z//H/9P/w//XwAA/0//D/9PAAD/X/8P/1//D/9P/x//T/8P/1//Hw=="),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AAD/f////78AAAAAAAD/vwAAAAD///+/AAD/fwAA/78AAP//////vwAA/38AAP+/AAD/f////78AAP//AAD/v////38AAACAAAAAAAAAAIAAAP9/AAAAgP//AAAAAACA/////wAAAIAAAP9/AAAAgAAA//8AAACA////fwAAAID/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_muyhy")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_tov4e"]
+data = PackedVector3Array(0, 0, 0.5, 1.88745e-08, -0.5, 1.88745e-08, 3.7749e-08, -0.5, 0.5, 0, 0, 0.5, 0, 0, 0, 1.88745e-08, -0.5, 1.88745e-08, -3.7749e-08, 0.5, 0.5, 0, 0, 0, 0, 0, 0.5, -3.7749e-08, 0.5, 0.5, -1.88745e-08, 0.5, -1.88745e-08, 0, 0, 0, 0.5, 0, 0, 1.88745e-08, -0.5, 1.88745e-08, 0, 0, 0, 0.5, 0, 0, 0.5, -0.5, 3.7749e-08, 1.88745e-08, -0.5, 1.88745e-08, 0.5, 0.5, -3.7749e-08, 0, 0, 0, -1.88745e-08, 0.5, -1.88745e-08, 0.5, 0.5, -3.7749e-08, 0.5, 0, 0, 0, 0, 0)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4txmq"]
+_surfaces = [{
+"aabb": AABB(0, 0, -0.5, 0.5, 0.5, 1),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAAAAQABgAHAAAABwADAAAABwAIAAMA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("AAAAAP9/AAAAAP////8AAAAA////fwAAAAAAAP//AAAAAAAAAAAAAAAA//8AAAAA//8AAAAAAAD//wAA/38AAP//AAD//wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7hthw"]
+resource_name = "IslandTilemap_Plane_012"
+_surfaces = [{
+"aabb": AABB(0, 0, -0.5, 0.5, 0.5, 1),
+"attribute_data": PackedByteArray("/0//H/8//w//T/8P/z//H/9f/x//X/8P/x8AAP8P/w//DwAA/x//D/8P/x//H/8f"),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAHAAgABgAJAAcACQAKAAcACQALAAoA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAAAAP9//78AAP//////vwAA////f/+/AAAAAP///78AAAAAAAD/vwAA//8AAP+///8AAAAA/78AAAAA/3//vwAAAAAAAP+///8AAP9//78AAAAA////v///AAD///+//38AAP9/AAD/fwAA/38AAP9/AAD/fwAA////f////3////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_4txmq")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_x8oue"]
+data = PackedVector3Array(0, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0, 0, -0.5, 0, 0.5, 0, 0, 0.5, -0.5, 0, 0, -0.5, 0, 0, 0, 0, 0.5, 0, 0.5, 0, -0.5, 0, 0, 0, 0, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0.5, 0, 0.5, 0, 0, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_188rc"]
+_surfaces = [{
+"aabb": AABB(0, 0, 0, 0.5, 0.5, 0.5),
+"format": 34896613377,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAACAAQAAAAFAAMAAAAEAAYAAAAGAAUA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 7,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAP////8AAAAA//8AAAAAAAAAAP//AAD/////AAAAAP//AAD//wAA//8AAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_v4pwe"]
+resource_name = "IslandTilemap_Plane_013"
+_surfaces = [{
+"aabb": AABB(0, 0, 0, 0.5, 0.5, 0.5),
+"attribute_data": PackedByteArray("/0//H/8//w//T/8P/z//H/8P/w//H/8f/w//H/8f/w//T/8f/1//D/9f/x//T/8P"),
+"format": 34896613399,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAAAAAAA/78AAP//////vwAA//8AAP+/AAAAAP///78AAAAAAAD/v///AAD///+/AAAAAP///7///wAAAAD/vwAAAAAAAACA/////wAAAID//wAAAAAAgAAA//8AAACA/38AAP9/AAD/fwAA/38AAP///3////9/////f////3//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_188rc")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_pse8w"]
+data = PackedVector3Array(0, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0, 0, 0, 0.5, 0, 0.5, 0, 0, 0.5, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0, 0, 0, 0, 0.5, 0, 0, 0.5, 0, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jfm2d"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 0.5, 1),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABQAGAAMABwADAAYACAADAAcACAAJAAMACQABAAMACQAKAAEA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 11,
+"vertex_data": PackedByteArray("/38AAAAAAAD/f////38AAP9///8AAAAA/38AAP9/AAD//wAAAAAAAP//AAD/fwAA//8AAP//AAD/fwAA//8AAAAAAAD//wAAAAAAAP9/AAAAAP///38AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_uijof"]
+resource_name = "IslandTilemap_Plane_014"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 0.5, 1),
+"attribute_data": PackedByteArray("/1//H/9P/w//X/8P/0//H/8fAAD/D/8P/w8AAP8f/w//H/8f/w//H/8P/w8AAP8fAAD/D/8//x//T/8P/0//H/8//w8="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUABwAIAAUACQAFAAgACgALAAkACgAMAAsADQAOAA8ADQAQAA4A"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("/38AAAAA/7//f////3//v/9///8AAP+//38AAP9//7///wAAAAD/v/9/AAD/f/+//38AAAAA/7///wAA/3//v///AAD///+//38AAP///78AAAAA//+qKv9/AAD/f6oqAAAAAP9/qioAAAAA/38AgP9/////fwCA/38AAP9/AIAAAP///38AgP9/AAD/fwAA/38AAP9/AAD///9/////f////3////9/////f////3+qqqqqqqqqqqqqqqr/f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_jfm2d")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_rkfvq"]
+data = PackedVector3Array(0, 0, -0.5, 0, 0.5, 0, 0, 0.5, -0.5, 0, 0, -0.5, 0, 0, 0, 0, 0.5, 0, 0.5, 0, -0.5, 0, 0, 0, 0, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, 0, 0, 0, 0, 0.5, 0, 0, 0.5, 0, 0.5, 0, 0, 0, -0.5, 0, 0, 0, 0.5, 0, 0, 0, 0, -0.5, 0, 0, -0.5, 0.5, 0, 0, 0.5, 0, -0.5, 0, 0.5, 0, 0, 0, 0, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ri4kg"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAAAAQABgAHAAAABwADAAAABwAIAAMA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("/38AAP9/AAD//wAAAAAAAP//AAD/fwAA/38AAAAAAAD/fwAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA/38AAAAAAAAAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_oowcs"]
+resource_name = "IslandTilemap_Plane_015"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"attribute_data": PackedByteArray("/y//D/8f/x//H/8P/y//H/8vAAD/HwAA/z8AAP8//w//P/8f"),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAAAAQABgAHAAAABwADAAAABwAIAAMA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("/38AAP9//////wAAAAD/////AAD/f////38AAAAA////fwAA////////AAD/////AAAAAP////8AAAAA/3///wAAAAAAAP///3//v/9//7//f/+//3//v/9//7//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ri4kg")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_n7ok0"]
+data = PackedVector3Array(0, 0, 0, 0.5, 0, -0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, -0.5, 0.5, 0, -0.5, 0, 0, 0.5, 0.5, 0, 0, 0.5, 0, 0.5, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -0.5, 0, 0.5, 0, 0, 0, 0, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0, 0, 0, 0, -0.5, 0, 0, 0, 0, -0.5, 0, 0, 0, -0.5, 0, 0, -0.5, 0, -0.5, 0, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_si2it"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 0.5, 0.5, 1),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAAAAQABgAHAAAABwADAAAABwAIAAMA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("//////9/AAD//wAAAAAAAP//AAD/fwAA/////wAAAAD///////8AAP//AAD//wAAAAD/////AAAAAP///38AAAAA//8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0tp7l"]
+resource_name = "IslandTilemap_Plane_016"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 0.5, 0.5, 1),
+"attribute_data": PackedByteArray("/08AAP9f/w//T/8P/18AAP8/AAD/P/8P/z8AAP8v/w//LwAA/z//D/8v/x//P/8f"),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAHAAgABgAJAAcACQAKAAcACQALAAoA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("//////9//7///wAAAAD/v///AAD/f/+//////wAA/7//////////v///AAD///+/AAD//////////////3//////////////AAD///9/////////AAD//wAA//8AAP///38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/3//v/9//7//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_si2it")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_hho57"]
+data = PackedVector3Array(0, 0, 0, 0, -0.5, -0.5, 0, -0.5, 0, 0, 0, 0, 0, 0, -0.5, 0, -0.5, -0.5, 0, 0, 0.5, 0, -0.5, 0, 0, -0.5, 0.5, 0, 0, 0.5, 0, 0, 0, 0, -0.5, 0, -0.5, 0, 0.5, 0, 0, 0, 0, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0, 0, 0, 0, -0.5, 0, 0, 0, 0, -0.5, 0, 0, 0, -0.5, 0, 0, -0.5, 0, -0.5, 0, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dq836"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5),
+"format": 34896613377,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAACAAQAAAAFAAMAAAAEAAYAAAAGAAUA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 7,
+"vertex_data": PackedByteArray("////////AAD//wAAAAAAAP//AAD//wAA/////wAAAAAAAAAA//8AAAAA//8AAAAAAAD/////AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_d88gj"]
+resource_name = "IslandTilemap_Plane_017"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5),
+"attribute_data": PackedByteArray("/08AAP9f/w//T/8P/18AAP8v/w//P/8f/y//H/8//w//TwAA/z//D/8/AAD/T/8P"),
+"format": 34896613399,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("/////////7///wAAAAD/v///AAD///+//////wAA/7///////////wAA//8AAP///////wAA//8AAP///////////////wCAAAAAAP//AIAAAP////8AgP//AAD//wCA/38AAP9/AAD/fwAA/38AAP9//7//f/+//3//v/9//7//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_dq836")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_g2o8j"]
+data = PackedVector3Array(0, 0, 0, 0, -0.5, -0.5, 0, -0.5, 0, 0, 0, 0, 0, 0, -0.5, 0, -0.5, -0.5, 0, 0, 0, -0.5, 0, -0.5, 0, 0, -0.5, 0, 0, 0, -0.5, -0.5, 0, -0.5, 0, 0, 0, 0, 0, 0, -0.5, 0, -0.5, -0.5, 0, 0, 0, 0, -0.5, 0, 0, -0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bj1ad"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 0.5, 1),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABQAGAAMABwADAAYACAADAAcACAAJAAMACQABAAMACQAKAAEA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 11,
+"vertex_data": PackedByteArray("/3//////AAD/fwAA/38AAP9/AAD//wAA/3////9/AAAAAP////8AAAAA////fwAAAAD//wAAAAD/f///AAAAAP////8AAAAA//////9/AAD//wAA/38AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yawxy"]
+resource_name = "IslandTilemap_Plane_018"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 0.5, 1),
+"attribute_data": PackedByteArray("/z8AAP9P/w//P/8P/08AAP8/AAD/L/8P/y8AAP8//w//P/8f/y//H/8v/w//H/8f/x//D/9fAAD/T/8P/08AAP9f/w8="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUABwAIAAUACQAFAAgACgALAAkACgAMAAsADQAOAA8ADQAQAA4A"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("/3///////7//fwAA/3//v/9/AAD///+//3////9//78AAP////////9/////f////3////////8AAP///3///wAA//8AAP///3///wAA////////AACqKv9/////f6oq//////9/qir//////38AgP9/AAD/fwCA/3////9/AID//wAA/38AgP9/AAD/fwAA/38AAP9/AAD/f/+//3//v/9//7//f/+//3//v/9//79U1aoqVNWqKlTVqir/f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_bj1ad")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8la0a"]
+data = PackedVector3Array(0, 0, 0.5, 0, -0.5, 0, 0, -0.5, 0.5, 0, 0, 0.5, 0, 0, 0, 0, -0.5, 0, -0.5, 0, 0.5, 0, 0, 0, 0, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0, 0, 0, 0, -0.5, 0, 0, -0.5, 0, -0.5, 0, 0, 0, 0.5, 0, 0, 0, -0.5, 0, 0, 0, 0, 0.5, 0, 0, 0.5, -0.5, 0, 0, -0.5, 0, 0.5, 0, -0.5, 0, 0, 0, 0, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, -0.5, 0, 0, 0, -0.5, 0, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rwjti"]
+_surfaces = [{
+"aabb": AABB(0, 0, -0.5, 0.5, 0.5, 1),
+"format": 34896613377,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAAAAQABgAHAAAABwADAAAABwAIAAMA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 9,
+"vertex_data": PackedByteArray("AAAAAP9/AAAAAP////8AAAAA////fwAAAAAAAP//AAAAAAAAAAAAAAAA//8AAAAA//8AAAAAAAD//wAA/38AAP//AAD//wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7p6wy"]
+resource_name = "IslandTilemap_Plane_022"
+_surfaces = [{
+"aabb": AABB(0, 0, -0.5, 0.5, 0.5, 1),
+"attribute_data": PackedByteArray("/0//H/8//w//T/8P/z//H/9f/x//X/8P/z8AAP8v/w//LwAA/z//D/8v/x//P/8f"),
+"format": 34896613399,
+"index_count": 24,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAAAAIABAACAAUABgAHAAgABgAJAAcACQAKAAcACQALAAoA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAAAAP9//78AAP//////vwAA////f/+/AAAAAP///78AAAAAAAD/vwAA//8AAP+///8AAAAA/78AAAAA/3//vwAAAAAAAP+///8AAP9//78AAAAA////v///AAD///+//38AAP9/AAD/fwAA/38AAP9/AAD/fwAA////f////3////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_rwjti")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fp806"]
+data = PackedVector3Array(0, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0, 0, -0.5, 0, 0.5, 0, 0, 0.5, -0.5, 0, 0, -0.5, 0, 0, 0, 0, 0.5, 0, 0.5, 0, -0.5, 0, 0, 0, 0, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0.5, 0, 0.5, 0, 0, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_srvsb"]
+_surfaces = [{
+"aabb": AABB(0, 0, 0, 0.5, 0.5, 0.5),
+"format": 34896613377,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAAACAAQAAAAFAAMAAAAEAAYAAAAGAAUA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 7,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAP////8AAAAA//8AAAAAAAAAAP//AAD/////AAAAAP//AAD//wAA//8AAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ejlly"]
+resource_name = "IslandTilemap_Plane_023"
+_surfaces = [{
+"aabb": AABB(0, 0, 0, 0.5, 0.5, 0.5),
+"attribute_data": PackedByteArray("/0//H/8//w//T/8P/z//H/8v/w//P/8f/y//H/8//w//T/8f/1//D/9f/x//T/8P"),
+"format": 34896613399,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkA"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAAAAAAA/78AAP//////vwAA//8AAP+/AAAAAP///78AAAAAAAD/v///AAD///+/AAAAAP///7///wAAAAD/vwAAAAAAAACA/////wAAAID//wAAAAAAgAAA//8AAACA/38AAP9/AAD/fwAA/38AAP///3////9/////f////3//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_srvsb")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_o7uuh"]
+data = PackedVector3Array(0, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0, 0, 0, 0.5, 0, 0.5, 0, 0, 0.5, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0, 0, 0, 0, 0.5, 0, 0, 0.5, 0, 0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_e5ys8"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 0.5, 1),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABQAGAAMABwADAAYACAADAAcACAAJAAMACQABAAMACQAKAAEA"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 11,
+"vertex_data": PackedByteArray("/38AAAAAAAD/f////38AAP9///8AAAAA/38AAP9/AAD//wAAAAAAAP//AAD/fwAA//8AAP//AAD/fwAA//8AAAAAAAD//wAAAAAAAP9/AAAAAP///38AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cdvul"]
+resource_name = "IslandTilemap_Plane_024"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 0.5, 1),
+"attribute_data": PackedByteArray("/1//H/9P/w//X/8P/0//H/8/AAD/L/8P/y8AAP8//w//P/8f/y//H/8v/w//H/8f/x//D/8//x//T/8P/0//H/8//w8="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUABwAIAAUACQAFAAgACgALAAkACgAMAAsADQAOAA8ADQAQAA4A"),
+"material": SubResource("StandardMaterial3D_eqsl6"),
+"name": "Island.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("/38AAAAA/7//f////3//v/9///8AAP+//38AAP9//7///wAAAAD/v/9/AAD/f/+//38AAAAA/7///wAA/3//v///AAD///+//38AAP///78AAAAA//+qKv9/AAD/f6oqAAAAAP9/qioAAAAA/38AgP9/////fwCA/38AAP9/AIAAAP///38AgP9/AAD/fwAA/38AAP9/AAD///9/////f////3////9/////f////3+qqqqqqqqqqqqqqqr/f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_e5ys8")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_jnh37"]
+data = PackedVector3Array(0, 0, -0.5, 0, 0.5, 0, 0, 0.5, -0.5, 0, 0, -0.5, 0, 0, 0, 0, 0.5, 0, 0.5, 0, -0.5, 0, 0, 0, 0, 0, -0.5, 0.5, 0, -0.5, 0.5, 0, 0, 0, 0, 0, 0.5, 0, 0, 0.5, 0, 0.5, 0, 0, 0, -0.5, 0, 0, 0, 0.5, 0, 0, 0, 0, -0.5, 0, 0, -0.5, 0.5, 0, 0, 0.5, 0, -0.5, 0, 0.5, 0, 0, 0, 0, 0, 0.5, -0.5, 0, 0.5, -0.5, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.5)
+
+[node name="Island Tileset" type="Node3D"]
+
+[node name="IslandTilemap" type="Node3D" parent="."]
+
+[node name="V_T_S" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("ArrayMesh_n8l7m")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_T_S"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_T_S/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_ytwh6")
+
+[node name="V_FT_S" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 0)
+mesh = SubResource("ArrayMesh_leyhw")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_FT_S"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_FT_S/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_ebcsg")
+
+[node name="V_FST_S" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 1)
+mesh = SubResource("ArrayMesh_eaf1o")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_FST_S"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_FST_S/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_c2fic")
+
+[node name="V_SFDT_S" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 1)
+mesh = SubResource("ArrayMesh_4sdyk")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_SFDT_S"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_SFDT_S/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_7gxq7")
+
+[node name="V_F" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -0.5, 0)
+mesh = SubResource("ArrayMesh_hy8fg")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_F"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_F/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_ou7on")
+
+[node name="V_FS" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -0.5, 1)
+mesh = SubResource("ArrayMesh_4ii4e")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_FS"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_FS/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_pvh51")
+
+[node name="V_FSD" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 1)
+mesh = SubResource("ArrayMesh_100ev")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_FSD"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_FSD/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_tov4e")
+
+[node name="V_FTD_S" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1.5, 0)
+mesh = SubResource("ArrayMesh_7hthw")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_FTD_S"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_FTD_S/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_x8oue")
+
+[node name="V_DD_S" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 1)
+mesh = SubResource("ArrayMesh_v4pwe")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_DD_S"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_DD_S/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_pse8w")
+
+[node name="V_FTDSTDDD_S" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1.5, 1)
+mesh = SubResource("ArrayMesh_uijof")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_FTDSTDDD_S"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_FTDSTDDD_S/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_rkfvq")
+
+[node name="V_T_G" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -3)
+mesh = SubResource("ArrayMesh_oowcs")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_T_G"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_T_G/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_n7ok0")
+
+[node name="V_FT_G" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -3)
+mesh = SubResource("ArrayMesh_0tp7l")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_FT_G"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_FT_G/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_hho57")
+
+[node name="V_FST_G" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -2)
+mesh = SubResource("ArrayMesh_d88gj")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_FST_G"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_FST_G/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_g2o8j")
+
+[node name="V_SFDT_G" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -2)
+mesh = SubResource("ArrayMesh_yawxy")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_SFDT_G"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_SFDT_G/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_8la0a")
+
+[node name="V_FTD_G" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1.5, -3)
+mesh = SubResource("ArrayMesh_7p6wy")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_FTD_G"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_FTD_G/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_fp806")
+
+[node name="V_DD_G" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, -2)
+mesh = SubResource("ArrayMesh_ejlly")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_DD_G"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_DD_G/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_o7uuh")
+
+[node name="V_FTDSTDDD_G" type="MeshInstance3D" parent="IslandTilemap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1.5, -2)
+mesh = SubResource("ArrayMesh_cdvul")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="IslandTilemap/V_FTDSTDDD_G"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="IslandTilemap/V_FTDSTDDD_G/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_jnh37")
