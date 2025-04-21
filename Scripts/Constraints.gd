@@ -3,6 +3,7 @@ extends Resource
 
 @export var idName: String
 @export var globalConstraints: Array
+@export var modelIDs: Array[int]
 
 @export_group("Cardinal Directions")
 @export var frontConstraints: Array[int]
@@ -12,10 +13,14 @@ extends Resource
 @export var topConstraints: Array[int]
 @export var bottomConstraints: Array[int]
 
-enum {ID, GLOBAL, FRONT, BACK, LEFT, RIGHT, TOP, BOTTOM}
-func _init(id: String, global, front: Array[int], back: Array[int], left: Array[int], right: Array[int], top: Array[int], bottom: Array[int]):
+
+enum direction {FRONT, BACK, LEFT, RIGHT, TOP, BOTTOM}
+enum {ID, GLOBAL, MODELIDS}
+
+func _init(id: String, global, modelids: Array[int],front: Array[int], back: Array[int], left: Array[int], right: Array[int], top: Array[int], bottom: Array[int]):
 	idName = id
 	globalConstraints = global
+	modelIDs = modelids
 	frontConstraints = front
 	backConstraints = back
 	leftConstraints = left
@@ -35,3 +40,22 @@ func addConstraints(constraints: Constraints):
 
 func rotateConstraints():
 	print("rotate")
+
+func setName(id):
+	idName = id
+
+func setConstraints(allowedmodelids: Array[int], direction):
+	match direction:
+		direction.FRONT:
+			frontConstraints = allowedmodelids
+		direction.BACK:
+			backConstraints = allowedmodelids
+		direction.LEFT:
+			leftConstraints = allowedmodelids
+		direction.RIGHT:
+			rightConstraints = allowedmodelids
+		direction.TOP:
+			topConstraints = allowedmodelids
+		direction.BOTTOM:
+			bottomConstraints = allowedmodelids
+		

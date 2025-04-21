@@ -1,8 +1,5 @@
-res://Scenes/main.tscn
+res://Scenes/IslandTileset.tscn
 res://Assets/IslandTileset.tres
 res://Scripts/Constraints.gd
-res://Assets/resources/new_resource.tres
 res://Scripts/generateConstraints.gd
-res://Scenes/IslandTileset.tscn
-res://Constraints/G.tres
-res://Constraints/S.tres
+res://Scenes/main.tscn
