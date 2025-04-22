@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bkuibu7fqxpgg"]
 
+[ext_resource type="Script" uid="uid://clbd32b80seer" path="res://Scripts/generateConstraints.gd" id="1_bo1nx"]
 [ext_resource type="MeshLibrary" uid="uid://crh22g8e1mhp5" path="res://Assets/IslandTileset.tres" id="1_jjgbg"]
-[ext_resource type="Script" uid="uid://mnr8moci2il6" path="res://Scripts/generate.gd" id="2_bo1nx"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bo1nx"]
 
@@ -11,12 +11,5 @@
 mesh_library = ExtResource("1_jjgbg")
 physics_material = SubResource("PhysicsMaterial_bo1nx")
 cell_size = Vector3(1, 1, 1)
-script = ExtResource("2_bo1nx")
-DIM = 2
+script = ExtResource("1_bo1nx")
 metadata/_editor_floor_ = Vector3(0, 1, 0)
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.912377, 0.40935, 0, -0.40935, 0.912377, 0, 3.04, 9.57271)
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 9.85874, 0)

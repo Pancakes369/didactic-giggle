@@ -27,55 +27,55 @@ func _ready():
 	setModelIDs()
 	#This piece of code was used to tell me the ids in the console/debugger
 	for item in itemList:
-		print(meshLibrary.get_item_name(itemList[item]))
+		print(meshLibrary.get_item_name(itemList[item]+" = "+item))
 	
 	#V_T
-	V_T.setConstraints(V_T.ModelIDs,Constraints.direction.FRONT)
-	V_T.setConstraints(V_T.ModelIDs,Constraints.direction.BACK)
-	V_T.setConstraints(V_T.ModelIDs,Constraints.direction.LEFT)
-	V_T.setConstraints(V_T.ModelIDs,Constraints.direction.RIGHT)
-	V_T.setConstraints(V.ModelIDs,Constraints.direction.TOP)
-	V_T.setConstraints(V.ModelIDs,Constraints.direction.BOTTOM)
+	V_T.setConstraints(V_T.modelIDs,Constraints.Direction.FRONT)
+	V_T.setConstraints(V_T.modelIDs,Constraints.Direction.BACK)
+	V_T.setConstraints(V_T.modelIDs,Constraints.Direction.LEFT)
+	V_T.setConstraints(V_T.modelIDs,Constraints.Direction.RIGHT)
+	V_T.setConstraints(V.modelIDs,Constraints.Direction.TOP)
+	V_T.setConstraints(V.modelIDs,Constraints.Direction.BOTTOM)
 	
 	#V_FT
-	V_FT.setConstraints(V.ModelIDs,Constraints.direction.FRONT)
-	V_FT.setConstraints(V_T.ModelIDs,Constraints.direction.BACK)
-	V_FT.setConstraints(V_FT.ModelIDs,Constraints.direction.LEFT)
-	V_FT.setConstraints(V_FT.ModelIDs,Constraints.direction.RIGHT)
-	V_FT.setConstraints(V.ModelIDs,Constraints.direction.TOP)
-	V_FT.setConstraints(V_F.ModelIDs,Constraints.direction.BOTTOM)
+	V_FT.setConstraints(V.modelIDs,Constraints.Direction.FRONT)
+	V_FT.setConstraints(V_T.modelIDs,Constraints.Direction.BACK)
+	V_FT.setConstraints(V_FT.modelIDs,Constraints.Direction.LEFT)
+	V_FT.setConstraints(V_FT.modelIDs,Constraints.Direction.RIGHT)
+	V_FT.setConstraints(V.modelIDs,Constraints.Direction.TOP)
+	V_FT.setConstraints(V_F.modelIDs,Constraints.Direction.BOTTOM)
 	
 	#V_FST
-	V_FST.setConstraints(V.ModelIDs,Constraints.direction.FRONT)
-	V_FST.setConstraints(V_T.ModelIDs,Constraints.direction.BACK)
-	V_FST.setConstraints(V_FT.ModelIDs,Constraints.direction.LEFT)
-	V_FST.setConstraints(V.ModelIDs,Constraints.direction.RIGHT)
-	V_FST.setConstraints(V.ModelIDs,Constraints.direction.TOP)
-	V_FST.setConstraints(V_FS.ModelIDs,Constraints.direction.BOTTOM)
+	V_FST.setConstraints(V.modelIDs,Constraints.Direction.FRONT)
+	V_FST.setConstraints(V_T.modelIDs,Constraints.Direction.BACK)
+	V_FST.setConstraints(V_FT.modelIDs,Constraints.Direction.LEFT)
+	V_FST.setConstraints(V.modelIDs,Constraints.Direction.RIGHT)
+	V_FST.setConstraints(V.modelIDs,Constraints.Direction.TOP)
+	V_FST.setConstraints(V_FS.modelIDs,Constraints.Direction.BOTTOM)
 	
 	#V_SFDT
-	#V_SFDT.setConstraints(V.ModelIDs,Constraints.direction.FRONT)
-	#V_SFDT.setConstraints(V_T.ModelIDs,Constraints.direction.BACK)
-	#V_SFDT.setConstraints(V_FT.ModelIDs,Constraints.direction.LEFT)
-	#V_SFDT.setConstraints(V_FT.ModelIDs,Constraints.direction.RIGHT)
-	#V_SFDT.setConstraints(V.ModelIDs,Constraints.direction.TOP)
-	#V_SFDT.setConstraints(V_F.ModelIDs,Constraints.direction.BOTTOM)
+	V_SFDT.setConstraints(V.modelIDs,Constraints.Direction.FRONT)
+	V_SFDT.setConstraints(V_T.modelIDs,Constraints.Direction.BACK)
+	V_SFDT.setConstraints(V_FT.modelIDs,Constraints.Direction.LEFT)
+	V_SFDT.setConstraints(V_FT.modelIDs,Constraints.Direction.RIGHT)
+	V_SFDT.setConstraints(V.modelIDs,Constraints.Direction.TOP)
+	V_SFDT.setConstraints(V_F.modelIDs,Constraints.Direction.BOTTOM)
 	
 	#V_F
-	#V_SFDT.setConstraints(V.ModelIDs,Constraints.direction.FRONT)
-	#V_SFDT.setConstraints(V_T.ModelIDs,Constraints.direction.BACK)
-	#V_SFDT.setConstraints(V_FT.ModelIDs,Constraints.direction.LEFT)
-	#V_SFDT.setConstraints(V_FT.ModelIDs,Constraints.direction.RIGHT)
-	#V_SFDT.setConstraints(V.ModelIDs,Constraints.direction.TOP)
-	#V_SFDT.setConstraints(V_F.ModelIDs,Constraints.direction.BOTTOM)
+	#V_F.setConstraints(V.modelIDs,Constraints.Direction.FRONT)
+	#V_F.setConstraints(V_T.modelIDs,Constraints.Direction.BACK)
+	#V_F.setConstraints(V_FT.modelIDs,Constraints.Direction.LEFT)
+	#V_F.setConstraints(V_FT.modelIDs,Constraints.Direction.RIGHT)
+	#V_F.setConstraints(V.modelIDs,Constraints.Direction.TOP)
+	#V_F.setConstraints(V_F.modelIDs,Constraints.Direction.BOTTOM)
 	
 	#V_FS
-	#V_SFDT.setConstraints(V.ModelIDs,Constraints.direction.FRONT)
-	#V_SFDT.setConstraints(V_T.ModelIDs,Constraints.direction.BACK)
-	#V_SFDT.setConstraints(V_FT.ModelIDs,Constraints.direction.LEFT)
-	#V_SFDT.setConstraints(V_FT.ModelIDs,Constraints.direction.RIGHT)
-	#V_SFDT.setConstraints(V.ModelIDs,Constraints.direction.TOP)
-	#V_SFDT.setConstraints(V_F.ModelIDs,Constraints.direction.BOTTOM)
+	#V_SFDT.setConstraints(V.modelIDs,Constraints.Direction.FRONT)
+	#V_SFDT.setConstraints(V_T.modelIDs,Constraints.Direction.BACK)
+	#V_SFDT.setConstraints(V_FT.modelIDs,Constraints.Direction.LEFT)
+	#V_SFDT.setConstraints(V_FT.modelIDs,Constraints.Direction.RIGHT)
+	#V_SFDT.setConstraints(V.modelIDs,Constraints.Direction.TOP)
+	#V_SFDT.setConstraints(V_F.modelIDs,Constraints.Direction.BOTTOM)
 	
 	#Old Code
 	#V_T = Constraints.new("V_T", [], V+V_F+V_FS+V_FSD, V+V_F+V_FS+V_FSD, V+V_F+V_FS+V_FSD, V+V_F+V_FS+V_FSD, S+G+V_F+V_FS+V_FSD, S+G+V_F+V_FS+V_FSD)
@@ -92,21 +92,22 @@ func _ready():
 	#S = Constraints.new("S", [], G, G, G ,G, [], [])
 	#V = Constraints.new("V", [], [], [], [], [], [], [])
 	#baseConstraints = [cG, cS]
+	
 	for constraint in baseConstraints:
 		ResourceSaver.save(constraint, "res://Constraints/" + constraint.idName + ".tres")
 
 func setModelIDs():
 	# numbers correspond with item ids of the meshlibrary
-	V_T.modelIDs = [0,10]
-	V_FT.modelIDs = [1,11]
-	V_FST.modelIDs = [2,12]
-	V_SFDT.modelIDs = [3,13]
-	V_F.modelIDs = [4]
-	V_FS.modelIDs = [5]
-	V_FSD.modelIDs = [6]
-	V_FTD.modelIDs = [7,14]
-	V_DD.modelIDs = [8,15]
-	V_FTDSTDDD.modelIDs = [9,16]
-	S.modelIDs = [0,1,2,3,7,8,9]
-	G.modelIDs = [10,11,12,13,14,15,16]
-	V.modelIDs = [17]
+	V_T.setModelIDs([0,10])
+	V_FT.setModelIDs([1,11])
+	V_FST.setModelIDs([2,12])
+	V_SFDT.setModelIDs([3,13])
+	V_F.setModelIDs([4])
+	V_FS.setModelIDs([5])
+	V_FSD.setModelIDs([6])
+	V_FTD.setModelIDs([7,14])
+	V_DD.setModelIDs([8,15])
+	V_FTDSTDDD.setModelIDs([9,16])
+	S.setModelIDs([0,1,2,3,7,8,9])
+	G.setModelIDs([10,11,12,13,14,15,16])
+	V.setModelIDs([17])

@@ -14,7 +14,7 @@ extends Resource
 @export var bottomConstraints: Array[int]
 
 
-enum direction {FRONT, BACK, LEFT, RIGHT, TOP, BOTTOM}
+enum Direction {FRONT, BACK, LEFT, RIGHT, TOP, BOTTOM}
 enum {ID, GLOBAL, MODELIDS}
 
 func _init(id: String, global, modelids: Array[int],front: Array[int], back: Array[int], left: Array[int], right: Array[int], top: Array[int], bottom: Array[int]):
@@ -44,18 +44,21 @@ func rotateConstraints():
 func setName(id):
 	idName = id
 
+func setModelIDs(models: Array[int]):
+	modelIDs = models
+
 func setConstraints(allowedmodelids: Array[int], direction):
 	match direction:
-		direction.FRONT:
+		Direction.FRONT:
 			frontConstraints = allowedmodelids
-		direction.BACK:
+		Direction.BACK:
 			backConstraints = allowedmodelids
-		direction.LEFT:
+		Direction.LEFT:
 			leftConstraints = allowedmodelids
-		direction.RIGHT:
+		Direction.RIGHT:
 			rightConstraints = allowedmodelids
-		direction.TOP:
+		Direction.TOP:
 			topConstraints = allowedmodelids
-		direction.BOTTOM:
+		Direction.BOTTOM:
 			bottomConstraints = allowedmodelids
 		
