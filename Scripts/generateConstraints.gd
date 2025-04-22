@@ -26,8 +26,8 @@ func _ready():
 	
 	setModelIDs()
 	#This piece of code was used to tell me the ids in the console/debugger
-	for item in itemList:
-		print(meshLibrary.get_item_name(itemList[item]+" = "+item))
+	#for item in itemList:
+	#	print(meshLibrary.get_item_name(itemList[item]+" = "+item))
 	
 	#V_T
 	V_T.setConstraints(V_T.modelIDs,Constraints.Direction.FRONT)
